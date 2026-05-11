@@ -1,22 +1,22 @@
-<<<<<<< HEAD
-# billpro
+# BillPro Billing App
 
-A new Flutter project.
+Flutter billing application with automatic GST calculation and invoice management using Firebase.
 
-## Getting Started
+## Current Features
+- Firebase integration
+- User authentication
+- Login interface
 
-This project is a starting point for a Flutter application.
+## Planned Features
+- GST calculation
+- Invoice generation
+- Billing dashboard
+- PDF invoice export
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
+- Flutter
+- Dart
+- Firebase
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Billpro-billing-app
-Flutter billing application with automatic GST calculation and invoice management
->>>>>>> f1ab72b45fced7cc41f620ab228498c547c3ae8b
+## Project Status
+Project currently under development.

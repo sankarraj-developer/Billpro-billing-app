@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # billpro
 
 A new Flutter project.
@@ -15,3 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Billpro-billing-app
+Flutter billing application with automatic GST calculation and invoice management
+>>>>>>> f1ab72b45fced7cc41f620ab228498c547c3ae8b

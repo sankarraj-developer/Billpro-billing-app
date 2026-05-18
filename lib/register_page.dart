@@ -1,15 +1,16 @@
  import 'package:firebase_auth/firebase_auth.dart';
  import 'package:flutter/material.dart';
- import 'register_page.dart';
+ 
 
- class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+
+ class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
 
   @override
-  State<LoginPage> createState() => LoginPagestate();
+  State<RegisterPage> createState() => RegisterPagestate();
  }
 
- class LoginPagestate extends State<LoginPage> {
+ class RegisterPagestate extends State<RegisterPage> {
 
  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
  final TextEditingController emailController = TextEditingController();
@@ -23,7 +24,7 @@
         
         
            //notification bar
-      appBar: AppBar(title: const Text("BillPro Login"),centerTitle: true,),
+      appBar: AppBar(title: const Text("BillPro Register"),centerTitle: true,),
 
           //interface
 
@@ -43,7 +44,7 @@
      //2nd text
              const SizedBox(height: 10,),
 
-                  const Text("Login To Continue", style: TextStyle(fontSize: 20,color: Colors.grey),),
+                  const Text("Create Account", style: TextStyle(fontSize: 20,color: Colors.grey),),
 
      //Email
              const SizedBox(height: 30,),
@@ -117,7 +118,7 @@
     onPressed: () async {
       if (formKey.currentState!.validate()) {
         try {
-          await FirebaseAuth.instance.signInWithEmailAndPassword(
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
             email: emailController.text.trim(),
             password: passwordController.text.trim(),
           );
@@ -141,7 +142,7 @@
       ),
     ),
 
-    child: const Text('Login', style: TextStyle(fontSize: 18)),
+    child: const Text('Register', style: TextStyle(fontSize: 18)),
   ),
 ),
 
@@ -149,17 +150,13 @@
 
               Row(mainAxisAlignment: MainAxisAlignment.center,
                  children: [const Text('Dont have an account'),
-                   TextButton(
-  onPressed: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const RegisterPage(),
-      ),
-    );
-  },
-  child: const Text('Create account'),
-)   
+                   TextButton(onPressed: () {
+                       
+                       //navigation addad latter
+
+                   },
+                     child: const Text('Create account'),
+                   ),   
                    ],
                    ),
            ],
